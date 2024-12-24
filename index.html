@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saral Teach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            list-style: none;
+            justify-content: space-around;
+            width: 50%;
+            font-weight: 600;
+        }
+        .navbar li:hover {
+            color: #f4f4f4;
+            cursor: pointer;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: calc(0.75rem + 1vh);
+            background-color: rgb(17, 199, 199);
+        }
+        main {
+            color: black;
+            padding: 20px;
+            background-color: azure;
+            text-align: center;
+            flex-grow: 1;
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(43, 101, 101);
+            color: white;
+        }
+        main {
+            background-image: url("https://img.icons8.com/color/48/student-center.png");
+            background-repeat: repeat;
+            background-position: center;
+        }
+        .container {
+            overflow: hidden;
+            width: 50%;
+            background-color: white;
+            padding: calc(2rem + 1vh);
+            border-radius: 10px;
+            margin: 0 auto;
+            box-shadow: 10px 10px 10px  black;
+        }
+        img {
+            max-width: calc(20rem + 4vw);
+            padding: 6px;
+        }
+
+
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+            .navbar {
+                width: 100%;
+                justify-content: space-around;
+                padding: 10px 0;
+            }
+            .navbar li {
+                padding: 5px 0;
+            }
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>SaralTech</h2>
+        <ul class="navbar">
+            <li>About</li>
+            <li>Home</li>
+            <li>Menu</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Saral Teach</h1>
+            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
+            <div class="image">
+                <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/07/05/Pictures/village-using-with-father-grandfather-laptop-brother_ef0c8cea-6138-11e7-8e9a-26934b659213.jpg"/>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>&copy; SaralTeach 2024</div>
+    </footer>
+</body>
+</html>
